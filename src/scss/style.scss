@@ -1,0 +1,86 @@
+@import 'variables.scss';
+
+// global user-agent stylesheet resets
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+section,
+article,
+main,
+header,
+footer,
+aside,
+p,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
+button {
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0 0;
+}
+hr {
+  margin: 0 $sm;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+// skip links
+.visible-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.visible-hidden:focus {
+  clip: auto;
+  height: auto;
+  overflow: auto;
+  position: absolute;
+  width: auto;
+}

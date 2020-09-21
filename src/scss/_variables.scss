@@ -1,0 +1,57 @@
+$primary: rgba(0, 0, 0, 1);
+$secondary: rgba(255, 255, 255, 1);
+
+// golden ratios
+$grl: 61.8%;
+$grs: 38.2%;
+
+$xxs: 0.5rem;
+$xs: 0.75rem;
+$sm: 1rem;
+$smm: 1.125rem;
+$m: 1.5rem;
+$lg: 2rem;
+$lgxl: 2.25rem;
+$xl: 3rem;
+$xxl: 6rem;
+$xxxl: 8rem;
+
+$fontSmall: 0.825rem;
+$fontRegular: 1rem;
+$fontMedium: 1.125rem;
+// $fontMediumExtra: 2rem;
+$fontLarge: 2.5rem;
+$fontXl: 4rem;
+$fontXxl: 6rem;
+
+@mixin fullyCenter {
+  display: grid;
+  place-content: center;
+}
+
+//mixins
+@mixin xsMedia {
+  @media only screen and (min-width: 600px) {
+    @content;
+  }
+}
+@mixin smMedia {
+  @media only screen and (min-width: 740px) {
+    @content;
+  }
+}
+@mixin mMedia {
+  @media only screen and (min-width: 850px) {
+    @content;
+  }
+}
+@mixin lgMedia {
+  @media only screen and (min-width: 1200px) {
+    @content;
+  }
+}
+@mixin xlMedia {
+  @media only screen and (min-width: 1800px) {
+    @content;
+  }
+}
